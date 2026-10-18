@@ -1,0 +1,8 @@
+# Additional driver-related files observed in the drivers folder
+# (not part of standard Windows System32\drivers inventory)
+DellFFDPWmiService.exe
+gm.dls
+gmreadme.txt
+gwdrv.cat
+gwdrv.inf
+gwdrv.sys
