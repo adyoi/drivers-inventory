@@ -9,7 +9,7 @@
 Inventaris lengkap file driver (.sys) dan file pendukung di C:\Windows\System32\drivers, dikelompokkan per kategori dan per nama, dengan penjelasan singkat fungsi tiap file.
 
 - **Sistem ini:** Microsoft Windows 11 Pro, versi 10.0.28000 (build 28000)
-- **Waktu generate:** 2026-10-18 23:00
+- **Waktu generate:** 2026-10-18 23:26
 - **Jumlah file:** 608 total, yaitu 461 SYS dan 147 file lain
 - **Total ukuran:** 162.2 MB
 - **Sumber penjelasan:** 0 file punya penjelasan kurasi manual, 589 file memakai FileDescription dari metadata versi, 19 file tidak punya metadata sehingga ditandai eksplisit.

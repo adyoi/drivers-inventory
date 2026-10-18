@@ -1,3 +1,7 @@
+param(
+    [string]$DriversDir = 'C:\Windows\System32\drivers',
+    [switch]$SkipCsv
+)
 $ErrorActionPreference = 'Stop'
 
 $here = $PSScriptRoot
@@ -13,9 +17,8 @@ $now = Get-Date -Format 'yyyy-MM-dd HH:mm'
 
 # ------------------------------------------------------------------ collect data
 
-$driversDir = 'C:\Windows\System32\drivers'
-Write-Host "Scanning $driversDir ..."
-$files = Get-ChildItem -LiteralPath $driversDir -File -Recurse -ErrorAction SilentlyContinue | Sort-Object Name
+Write-Host "Scanning $DriversDir ..."
+$files = Get-ChildItem -LiteralPath $DriversDir -File -Recurse -ErrorAction SilentlyContinue | Sort-Object Name
 $csvRows = foreach ($f in $files) {
     $vi = $f.VersionInfo
     [PSCustomObject]@{
